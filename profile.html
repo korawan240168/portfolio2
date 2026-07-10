@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ประวัติส่วนตัว</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"TH Sarabun New",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#dff6ff,#b8e8fc,#eaf9ff);
+    background-size:400% 400%;
+    animation:bgmove 10s ease infinite;
+}
+
+@keyframes bgmove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(8px);
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    color:#0077cc;
+    font-size:48px;
+}
+
+nav{
+    background:#87CEFA;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    animation:fade 1s;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.photo{
+    width:280px;
+    text-align:center;
+}
+
+.photo img{
+    width:220px;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid #87CEFA;
+}
+
+.info{
+    flex:1;
+    min-width:300px;
+}
+
+.info h2{
+    color:#0077cc;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.info p{
+    font-size:28px;
+    margin:8px 0;
+}
+
+.about{
+    margin-top:25px;
+}
+
+.about h2{
+    color:#0077cc;
+    font-size:36px;
+}
+
+.about p{
+    font-size:28px;
+    line-height:1.7;
+}
+
+footer{
+    text-align:center;
+    background:#87CEFA;
+    color:white;
+    padding:20px;
+    margin-top:40px;
+    font-size:22px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>ประวัติส่วนตัว</h1>
+
+</header>
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">ประวัติการศึกษา</a>
+<a href="award.html">กิจกรรม</a>
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card photo">
+
+<!-- เปลี่ยนเป็นรูปของตนเอง -->
+<img src="profile.jpg" alt="รูปภาพ">
+
+<h2 style="margin-top:15px;color:#0077cc;">
+ชื่อ-นามสกุล
+</h2>
+
+</div>
+
+<div class="card info">
+
+<h2>ข้อมูลส่วนตัว</h2>
+
+<p><b>ชื่อ :</b> นาย................................</p>
+
+<p><b>ชื่อเล่น :</b> ..............................</p>
+
+<p><b>วันเกิด :</b> ..............................</p>
+
+<p><b>อายุ :</b> 18 ปี</p>
+
+<p><b>สัญชาติ :</b> ไทย</p>
+
+<p><b>ศาสนา :</b> พุทธ</p>
+
+<p><b>กรุ๊ปเลือด :</b> O</p>
+
+<p><b>งานอดิเรก :</b> อ่านหนังสือ ฟังเพลง เล่นกีฬา เขียนโปรแกรม</p>
+
+<p><b>ความสามารถพิเศษ :</b> ใช้โปรแกรม Microsoft Office, Canva และพื้นฐาน HTML</p>
+
+<p><b>คติประจำใจ :</b> "ความพยายามอยู่ที่ไหน ความสำเร็จอยู่ที่นั่น"</p>
+
+</div>
+
+<div class="card about">
+
+<h2>แนะนำตัว</h2>
+
+<p>
+
+สวัสดีครับ/ค่ะ ดิฉัน/ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 6
+มีความสนใจด้านเทคโนโลยี การออกแบบเว็บไซต์
+และการเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ
+เป็นผู้ที่มีความรับผิดชอบ ขยัน อดทน
+สามารถทำงานร่วมกับผู้อื่นได้ดี
+และพร้อมพัฒนาตนเองเพื่อก้าวสู่การศึกษาต่อในระดับมหาวิทยาลัย
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+My Portfolio
+
+</footer>
+
+</body>
+</html>
