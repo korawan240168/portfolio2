@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ช่องทางการติดต่อ</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"TH Sarabun New",sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#dff6ff,#b8e8fc,#eaf9ff);
+    background-size:400% 400%;
+    animation:bgmove 10s ease infinite;
+
+}
+
+
+@keyframes bgmove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+header{
+
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(8px);
+    text-align:center;
+    padding:20px;
+
+}
+
+
+header h1{
+
+    color:#0077cc;
+    font-size:48px;
+
+}
+
+
+nav{
+
+    background:#87CEFA;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:15px;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+    color:yellow;
+
+}
+
+
+.container{
+
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+
+}
+
+
+.card{
+
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    text-align:center;
+    animation:show 1s;
+
+}
+
+
+@keyframes show{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+.profile{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #87CEFA;
+    margin-bottom:20px;
+
+}
+
+
+.card h2{
+
+    color:#0077cc;
+    font-size:38px;
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    font-size:27px;
+    margin:10px;
+
+}
+
+
+.contact-box{
+
+    margin-top:25px;
+    display:grid;
+    gap:15px;
+
+}
+
+
+.contact-item{
+
+    background:#eaf8ff;
+    padding:15px;
+    border-radius:15px;
+    font-size:25px;
+    transition:.3s;
+
+}
+
+
+.contact-item:hover{
+
+    background:#87CEFA;
+    color:white;
+    transform:scale(1.03);
+
+}
+
+
+.contact-item a{
+
+    text-decoration:none;
+    color:#0077cc;
+
+}
+
+
+footer{
+
+    margin-top:50px;
+    background:#87CEFA;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>ช่องทางการติดต่อ</h1>
+
+</header>
+
+
+<nav>
+
+<a href="index.html">หน้าแรก</a>
+
+<a href="profile.html">ประวัติส่วนตัว</a>
+
+<a href="education.html">ประวัติการศึกษา</a>
+
+<a href="award.html">ผลงาน</a>
+
+<a href="contact.html">ติดต่อ</a>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<img src="profile.jpg" class="profile" alt="รูปของฉัน">
+
+
+<h2>ติดต่อฉัน</h2>
+
+
+<p>
+หากต้องการสอบถามข้อมูลเพิ่มเติม
+สามารถติดต่อผ่านช่องทางด้านล่างได้เลยครับ/ค่ะ
+</p>
+
+
+
+<div class="contact-box">
+
+
+<div class="contact-item">
+
+📧 Email :
+<a href="#">
+yourname@gmail.com
+</a>
+
+</div>
+
+
+
+<div class="contact-item">
+
+📱 โทรศัพท์ :
+08x-xxx-xxxx
+
+</div>
+
+
+
+<div class="contact-item">
+
+📘 Facebook :
+<a href="#">
+ชื่อ Facebook ของคุณ
+</a>
+
+</div>
+
+
+
+<div class="contact-item">
+
+📷 Instagram :
+<a href="#">
+@yourinstagram
+</a>
+
+</div>
+
+
+
+<div class="contact-item">
+
+📍 ที่อยู่ :
+จังหวัด............................
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<footer>
+
+My Portfolio
+
+</footer>
+
+
+</body>
+</html>
